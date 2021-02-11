@@ -41,7 +41,7 @@ THEME = '/Users/ethan/Documents/Projects/github_pages/themes/pelican-blue'
 
 SIDEBAR_DIGEST = 'Data Engineering and Business Intelligence'
 
-# FAVICON = 'url-to-favicon'
+FAVICON = '/images/ek_favicon.ico'
 
 DISPLAY_PAGES_ON_MENU = True
 
