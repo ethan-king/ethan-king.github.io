@@ -20,7 +20,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "https://ethan-king.disqus.com"
+DISQUS_SITENAME = "ethan-king"
 GOOGLE_ANALYTICS = "UA-189473741-1"
 
 MENUITEMS = (
