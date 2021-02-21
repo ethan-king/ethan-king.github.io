@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ethan King</title><link href="https://ethan-king.github.io/" rel="alternate"></link><link href="https://ethan-king.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ethan-king.github.io/</id><updated>2021-02-19T11:00:00-05:00</updated><entry><title>Intro to Pelican and Github Pages</title><link href="https://ethan-king.github.io/getting-started-pelican.html" rel="alternate"></link><published>2021-02-19T11:00:00-05:00</published><updated>2021-02-19T11:00:00-05:00</updated><author><name>Ethan King</name></author><id>tag:ethan-king.github.io,2021-02-19:/getting-started-pelican.html</id><summary type="html">&lt;p&gt;Summarizing the Pelican project&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've always liked the idea of hosting a website for free on &lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt;. Having a 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ethan King - Python</title><link href="https://ethan-king.github.io/" rel="alternate"></link><link href="https://ethan-king.github.io/feeds/python.atom.xml" rel="self"></link><id>https://ethan-king.github.io/</id><updated>2021-02-19T11:00:00-05:00</updated><entry><title>Intro to Pelican and Github Pages</title><link href="https://ethan-king.github.io/getting-started-pelican.html" rel="alternate"></link><published>2021-02-19T11:00:00-05:00</published><updated>2021-02-19T11:00:00-05:00</updated><author><name>Ethan King</name></author><id>tag:ethan-king.github.io,2021-02-19:/getting-started-pelican.html</id><summary type="html">&lt;p&gt;Summarizing the Pelican project&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've always liked the idea of hosting a website for free on &lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt;. Having a 
 preference for Python, I decided to use &lt;a href="https://docs.getpelican.com/en/latest/"&gt;Pelican&lt;/a&gt; for the static website 
 generation. I like the idea of using &lt;a href="https://www.markdownguide.org/basic-syntax/"&gt;markdown&lt;/a&gt; to generate content. A 
 healthy &lt;a href="http://www.pelicanthemes.com/"&gt;theme selection&lt;/a&gt; to choose from, and using Github for deployment makes pushing 
@@ -129,42 +129,4 @@ to the github pages settings and select the branch that will host the site. In t
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And the website is live! 
-https://ethan-king.github.io/&lt;/p&gt;</content><category term="Python"></category><category term="pelican"></category><category term="publishing"></category><category term="github"></category><category term="markdown"></category></entry><entry><title>Git Cheatsheet</title><link href="https://ethan-king.github.io/git-cheatsheet.html" rel="alternate"></link><published>2021-02-10T00:00:00-05:00</published><updated>2021-02-10T00:00:00-05:00</updated><author><name>Ethan King</name></author><id>tag:ethan-king.github.io,2021-02-10:/git-cheatsheet.html</id><summary type="html">&lt;p&gt;Common Git commands&lt;/p&gt;</summary><content type="html">&lt;p&gt;A Git cheatsheet.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.atlassian.com/git/tutorials/install-git"&gt;Install Git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Navigate to the project directory and initialize a github repository&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;check the remote&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git remote -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;add remote&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git remote add origin https://github.com/MY_PROFILE/MY_REPO.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;change branch&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git checkout -b branch
-Switched to a new branch &lt;span class="s1"&gt;&amp;#39;branch&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;check branches&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git branch -vv
-* branch  808b598 Initial commit
- master  808b598 &lt;span class="o"&gt;[&lt;/span&gt;origin/master&lt;span class="o"&gt;]&lt;/span&gt; Initial commit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;push to remote&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git push -u &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;set upstream remote&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git push --set-upstream &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;
-&lt;span class="c1"&gt;# next time can just call&lt;/span&gt;
-$ git push 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;merge&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git checkout main
-$ git merge dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Github"></category><category term="github"></category></entry></feed>
+https://ethan-king.github.io/&lt;/p&gt;</content><category term="Python"></category><category term="pelican"></category><category term="publishing"></category><category term="github"></category><category term="markdown"></category></entry></feed>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Person">
+<head>
+            <meta charset="utf-8">
+        <!-- Site Meta Data -->
+        <title>Git Cheatsheet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Ethan">
+
+        <link rel="shortcut icon" href="/images/ek_favicon.ico">
+
+        <!-- Google Analytics -->
+            <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-189473741-1', 'auto');
+            ga('send', 'pageview');
+            </script>
+            <!-- End Google Analytics -->
+
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Ethan King">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="https://ethan-king.github.io/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://ethan-king.github.io/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+            <link href="https://ethan-king.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+                  title="Ethan King ATOM Feed"/>
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="k1ngethan">
+        <meta name="twitter:image" content="">
+
+
+
+
+    <meta name="twitter:creator" content="k1ngethan">
+    <meta name="twitter:url" content="https://ethan-king.github.io/git-cheatsheet.html">
+    <meta name="twitter:title" content="Ethan King ~ Git Cheatsheet">
+    <meta name="twitter:description" content="Common Git commands">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Ethan King ~ Git Cheatsheet"/>
+    <meta property="og:description" content="Common Git commands"/>
+    <meta property="og:image" content=""/>
+</head>
+
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href="https://ethan-king.github.io"><img id="avatar" src=""></a></center>-->
+    <h1>Ethan King</h1>
+        <p>Data Engineering and Business Intelligence</p>
+    <br>
+
+        <a class="twitter-follow-button"
+           href="https://twitter.com/k1ngethan"
+           data-show-count="false"
+           data-lang="en">
+            Follow @twitterdev
+        </a>
+        <script type="text/javascript">
+            window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = {
+                        _e: [], ready: function (f) {
+                            t._e.push(f)
+                        }
+                    });
+            }(document, "script", "twitter-wjs"));
+        </script>
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+                <li><a class="nav__link" href="https://ethan-king.github.io/">Home</a></li>
+                <li><a class="nav__link" href="https://ethan-king.github.io/pdfs/Ethan_King_Resume.pdf">Resume</a></li>
+
+                <li><a class="nav__link" href="https://ethan-king.github.io/pages/about.html">About</a></li>
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://www.linkedin.com/in/ethan-king" target="_blank"><img
+                        src="https://ethan-king.github.io/theme/images/icons/linkedin.png"></a>
+                <a href="https://github.com/ethan-king" target="_blank"><img
+                        src="https://ethan-king.github.io/theme/images/icons/github.png"></a>
+                <a href="https://twitter.com/k1ngethan" target="_blank"><img
+                        src="https://ethan-king.github.io/theme/images/icons/twitter.png"></a>
+            <a href="https://ethan-king.github.io/feeds/all.atom.xml" rel="alternate">
+                <img src="https://ethan-king.github.io/theme/images/icons/rss.png"></a>
+    </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+                <li class="active"><a
+                        href="https://ethan-king.github.io/category/github.html">Github</a></li>
+                <li><a
+                        href="https://ethan-king.github.io/category/python.html">Python</a></li>
+        </ul>
+
+
+</aside>
+
+<!-- Content -->
+<article>
+    <section id="content">
+        <article>
+            <h2 class="post_title post_detail"><a href="https://ethan-king.github.io/git-cheatsheet.html" rel="bookmark"
+                                                  title="Permalink to Git Cheatsheet">Git Cheatsheet</a></h2>
+            <div class="entry-content blog-post">
+                <p>A Git cheatsheet.</p>
+<p><a href="https://www.atlassian.com/git/tutorials/install-git">Install Git</a></p>
+<p>Navigate to the project directory and initialize a github repository</p>
+<div class="highlight"><pre><span></span><code>$ git init
+</code></pre></div>
+
+<p>check the remote</p>
+<div class="highlight"><pre><span></span><code>$ git remote -v
+</code></pre></div>
+
+<p>add remote</p>
+<div class="highlight"><pre><span></span><code>$ git remote add origin https://github.com/MY_PROFILE/MY_REPO.git
+</code></pre></div>
+
+<p>change branch</p>
+<div class="highlight"><pre><span></span><code>$ git checkout -b branch
+Switched to a new branch <span class="s1">&#39;branch&#39;</span>
+</code></pre></div>
+
+<p>check branches</p>
+<div class="highlight"><pre><span></span><code>$ git branch -vv
+* branch  808b598 Initial commit
+ master  808b598 <span class="o">[</span>origin/master<span class="o">]</span> Initial commit
+</code></pre></div>
+
+<p>push to remote</p>
+<div class="highlight"><pre><span></span><code>$ git push -u &lt;remote&gt; &lt;branch&gt;
+</code></pre></div>
+
+<p>set upstream remote</p>
+<div class="highlight"><pre><span></span><code>$ git push --set-upstream &lt;remote&gt; &lt;branch&gt;
+<span class="c1"># next time can just call</span>
+$ git push 
+</code></pre></div>
+
+<p>merge</p>
+<div class="highlight"><pre><span></span><code>$ git checkout main
+$ git merge dev
+</code></pre></div>
+            </div>
+            <div class="post_list">
+                <span>By </span>
+                <a href="https://ethan-king.github.io/author/ethan-king.html">@Ethan King</a>
+                <span> in </span>
+                <span class="post_category"><a href="https://ethan-king.github.io/category/github.html" rel="bookmark"
+                                               title="Permalink to Github">[ Github ]</a></span>
+                <span class="post_date">Wed 10 February 2021</span>
+                <div><span>Tags : </span>
+                            <span><a href="https://ethan-king.github.io/tag/github.html">#github, </a></span>
+                </div>
+
+                <div class="entry-social">
+                    <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=https://ethan-king.github.io/git-cheatsheet.html&text=Git Cheatsheet&via=k1ngethan"><img
+                            src="https://ethan-king.github.io/theme/images/icons/twitter-s.png"></a></span>
+
+                    <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=https://ethan-king.github.io/git-cheatsheet.html&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="https://ethan-king.github.io/theme/images/icons/google-s.png"></a></span>
+
+                    <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=https://ethan-king.github.io/git-cheatsheet.html&t=Git Cheatsheet"><img
+                            src="https://ethan-king.github.io/theme/images/icons/facebook-s.png"></a></span>
+
+                    <a target="_blank" title="Linkedin"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://ethan-king.github.io/git-cheatsheet.html&title=Git Cheatsheet"
+                       rel="nofollow"
+                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="https://ethan-king.github.io/theme/images/icons/linkedin-s.png"></a>
+
+                    <span class="mail"><a
+                            href="mailto:?subject=Git Cheatsheet&amp;body=Viens découvrir un article à propos de [Git Cheatsheet] sur le site de Ethan. https://ethan-king.github.io/git-cheatsheet.html"
+                            title="Share by Email" target="_blank"><img
+                            src="https://ethan-king.github.io/theme/images/icons/mail-s.png"></a></span>
+                </div>
+            </div>
+                <div class="comments">
+                    <h2>Comments !</h2>
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        var disqus_identifier = "git-cheatsheet.html";
+                        (function () {
+                            var dsq = document.createElement('script');
+                            dsq.type = 'text/javascript';
+                            dsq.async = true;
+                            dsq.src = 'https://https://ethan-king.disqus.com.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] ||
+                            document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                </div>
+        </article>
+    </section>
+</article>
+
+<!-- Footer -->
+    <footer>
+        <p>
+            Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>.
+        </p>
+    </footer>
+
+<!-- Analytics -->
+
+
+
+</body>
+</html>
