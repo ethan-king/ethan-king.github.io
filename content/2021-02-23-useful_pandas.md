@@ -1,10 +1,10 @@
-Title: A Pandas Summary
+Title: Useful Pandas 
 Date: 2021-02-23 00:00
 Category: Python
 Tags: pandas, data
 Slug: useful-pandas
 Authors: Ethan King
-Summary: Useful pandas transformations
+Summary: Useful Pandas transformations
 
 This is a guide to using pandas for data transformations. One can't reasonably be expected to remember the pandas API, 
 and I google them often enough to be annoyed with having to look at the same Stack Overflow responses or documentation 
@@ -73,5 +73,4 @@ print("date and time:", now.strftime("%m/%d/%Y, %H:%M:%S"))
 date and time: 02/24/2021, 04:59:31
 ```
 
-That's all for now, but this post is a work in progress. Have any commonly googled pandas uses that are missing? 
-Leave a comment below!
+Have any useful Pandas suggestions? Leave a comment below!
