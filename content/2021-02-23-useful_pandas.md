@@ -73,4 +73,25 @@ print("date and time:", now.strftime("%m/%d/%Y, %H:%M:%S"))
 date and time: 02/24/2021, 04:59:31
 ```
 
+## Merging
+[Pandas docs merging](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html)
+Pandas offers a flexible approach to combining dataframes. 
+
+```python
+df_new = pd.merge(
+    left,
+    right,
+    how="inner",
+    on=None,
+    left_on=None,
+    right_on=None,
+    left_index=False,
+    right_index=False,
+    sort=True,
+    suffixes=("_x", "_y"),
+    copy=True,
+    indicator=False,
+    validate=None,
+)
+```
 Have any useful Pandas suggestions? Leave a comment below!

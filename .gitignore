@@ -7,9 +7,7 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-.idea/modules.xml
-.idea/personal.iml
-.idea/vcs.xml
+
 
 
 # Generated files
@@ -77,3 +75,4 @@ fabric.properties
 output/
 .DS_Store
 __pycache__/
+.idea/*
